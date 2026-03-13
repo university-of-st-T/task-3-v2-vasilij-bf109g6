@@ -13,3 +13,7 @@ def calculate_total(prices, *discounts, **options):
         total = round(total, round_to)
 
     return total
+
+prices = [100, 150, 300]
+total = calculate_total(prices, 10, 5, tax=20, round_to=1)
+print(total)
